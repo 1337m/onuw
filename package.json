@@ -1,0 +1,72 @@
+{
+  "name": "onuw",
+  "version": "0.0.0",
+  "description": "One Night Ultimate Werewolf - Digital board game.",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "fix": "npm run -s fix:ts",
+    "fix:ts": "tslint ./src/**/*.ts --fix",
+    "lint": "npm run -s lint:ts",
+    "lint:ts": "tslint --format codeFrame ./src/**/*.ts",
+    "prepublish": "npm run build",
+    "test": "npm run test:unit && npm run lint",
+    "test:unit": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/1337m/onuw.git"
+  },
+  "keywords": [
+    "one",
+    "night",
+    "ultimate",
+    "werewolf",
+    "mobile",
+    "base",
+    "javascript",
+    "react"
+  ],
+  "author": "Rafal Proszowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1337m/onuw/issues"
+  },
+  "homepage": "https://github.com/1337m/onuw#readme",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/react": "^16.3.16",
+    "@types/uuid": "^3.4.3",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "5.10.0",
+    "tslint-consistent-codestyle": "^1.13.0",
+    "tslint-immutable": "^4.5.4",
+    "tslint-microsoft-contrib": "^5.0.3",
+    "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "uuid": "^3.2.1"
+  },
+  "jest": {
+    "bail": true,
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  }
+}
