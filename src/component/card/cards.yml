@@ -1,0 +1,48 @@
+- name: villager
+  aligance: villager
+  occurance: 3
+
+- name: doppelganger
+  aligance: none
+  occurance: 1
+
+- name: werewolf
+  aligance: werewolf
+  occurance: 2
+
+- name: minion
+  aligance: werewolf
+  occurance: 1
+
+- name: mason
+  aligance: villager
+  occurance: 2
+
+- name: seer
+  aligance: villager
+  occurance: 1
+
+- name: robber
+  aligance: villager
+  occurance: 1
+
+- name: troublemaker
+  aligance: villager
+  action: none
+  occurance: 1
+
+- name: drunk
+  aligance: villager
+  occurance: 1
+
+- name: insomniac
+  aligance: villager
+  occurance: 1
+
+- name: hunter
+  aligance: villager
+  occurance: 1
+
+- name: tanner
+  aligance: none
+  occurance: 1
